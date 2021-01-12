@@ -31,7 +31,7 @@ spec:
       - "--ping"
       - "--api.dashboard=true"
       - "--metrics.prometheus=false"
-      - "--providers.kubernetesingress.ingressendpoint.hostname=wintergrasp.icecrown.local"
+      - "--providers.kubernetesingress.ingressendpoint.hostname=wintergrasp.icecrown.online"
     ports:
       web:
         redirectTo: websecure
