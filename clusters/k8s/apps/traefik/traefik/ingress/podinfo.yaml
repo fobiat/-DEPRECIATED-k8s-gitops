@@ -1,0 +1,14 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: podinfo
+  namespace: default
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - match: Host(`podinfo.icecrown.local`)
+      kind: Rule
+      services:
+        - name: api@internal
+          kind: TraefikService
