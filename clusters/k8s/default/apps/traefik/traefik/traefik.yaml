@@ -30,7 +30,7 @@ spec:
     additionalArguments:
       - "--ping"
       - "--api.dashboard=true"
-      - "--providers.kubernetesingress.ingressendpoint.hostname=icecrown.local"
+      - "--providers.kubernetesingress.ingressendpoint.hostname=10.10.20.80"
     service:
       externalIPs:
         - 10.10.20.80
