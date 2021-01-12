@@ -26,13 +26,11 @@ spec:
     ingressRoute:
       dashboard:
         enabled: true
+        insecure: true
     additionalArguments:
       - "--ping"
       - "--api.dashboard=true"
       - "--providers.kubernetesingress.ingressendpoint.hostname=icecrown.local"
-    ports:
-      web:
-        redirectTo: websecure
     service:
       externalIPs:
         - 10.10.20.80
