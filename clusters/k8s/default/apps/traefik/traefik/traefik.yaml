@@ -8,7 +8,6 @@ spec:
   chart:
     spec:
       chart: traefik
-      version: 9.12.3
       sourceRef:
         kind: HelmRepository
         name: traefik
@@ -16,25 +15,24 @@ spec:
       interval: 5m0s
   values:
     deployment:
+      enabled: true
       kind: DaemonSet
-    logs:
-      general:
-        level: DEBUG
     ingressClass:
       enabled: true
       isDefaultClass: true
     ingressRoute:
       dashboard:
         enabled: true
-    additionalArguments:
-      - "--ping"
-      - "--api.dashboard=true"
-      - "--providers.kubernetesingress.ingressendpoint.hostname=icecrown.local"
     ports:
       web:
-        redirectTo: websecure
+        redirectTo: web
     service:
       externalIPs:
         - 10.10.20.80
-      spec:
-        externalTrafficPolicy: Local
+    logs:
+      general:
+        level: DEBUG
+      access:
+        enabled: true
+globalArguments:
+  - "--global.checknewversion"
