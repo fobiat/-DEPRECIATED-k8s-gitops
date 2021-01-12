@@ -5,7 +5,7 @@ metadata:
   namespace: default
 spec:
   entryPoints:
-    - websecure
+    - web
   routes:
     - match: Host(`podinfo.icecrown.local`)
       kind: Rule
