@@ -30,7 +30,7 @@ spec:
     additionalArguments:
       - "--ping"
       - "--api.dashboard=true"
-      - "--providers.kubernetesingress.ingressendpoint.hostname=traefik.icecrown.online"
+      - "--providers.kubernetesingress.ingressendpoint.hostname=icecrown.online"
     service:
       enabled: true
       type: LoadBalancer
@@ -45,3 +45,8 @@ spec:
         expose: true
         exposedPort: 8080
         protocol: TCP
+    domains:
+            - main: icecrown.online
+              sans:
+                - traefik.icecrown.online
+                - podinfo.icecrown.online
