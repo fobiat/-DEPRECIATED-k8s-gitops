@@ -19,10 +19,12 @@ spec:
       interval: 5m0s
   values:
     deployment:
-      kind: DaemonSet
+      kind: Deployment
     logs:
       general:
         level: DEBUG
+      access:
+        enabled: true
     ingressClass:
       enabled: true
       isDefaultClass: true
