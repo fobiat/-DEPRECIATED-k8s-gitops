@@ -5,9 +5,6 @@ metadata:
   namespace: cert-manager
 spec:
   interval: 5m
-  dependsOn:
-    - name: sealed-secrets
-      namespace: flux-system
   chart:
     spec:
       chart: cert-manager
