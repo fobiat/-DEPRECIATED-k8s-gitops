@@ -34,6 +34,17 @@ spec:
       - "--providers.kubernetesingress.ingressendpoint.hostname=icecrown.online"
     service:
       enabled: true
+    ports:
+      traefik:
+        port: 9000
+        expose: true
+        exposedPort: 9000
+        protocol: TCP
+      web:
+        port: 8000
+        expose: true
+        exposedPort: 80
+        protocol: TCP
       type: LoadBalancer
       spec:
         loadBalancerIP: 10.10.20.80
