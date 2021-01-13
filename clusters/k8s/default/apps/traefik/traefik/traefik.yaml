@@ -33,7 +33,6 @@ spec:
         enabled: true
         insecure: true
     additionalArguments:
-      - "--ping"
       - "--api.dashboard=true"
       - "--providers.kubernetesingress.ingressendpoint.hostname=icecrown.online"
     service:
