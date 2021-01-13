@@ -42,7 +42,3 @@ spec:
         externalTrafficPolicy: Local
       externalIPs:
         - 10.10.20.80
-  web:
-    address: :80
-  websecure:
-    address: :443
