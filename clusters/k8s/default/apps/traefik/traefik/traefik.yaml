@@ -4,6 +4,9 @@ metadata:
   name: traefik
   namespace: default
 spec:
+  dependsOn:
+    - name: cert-manager
+      namespace: cert-manager
   interval: 5m0s
   chart:
     spec:
@@ -27,6 +30,10 @@ spec:
       dashboard:
         enabled: true
         insecure: true
+    additionalArguments:
+      - "--ping"
+      - "--api.dashboard=true"
+      - "--providers.kubernetesingress.ingressendpoint.hostname=icecrown.online"
     service:
       enabled: true
       type: LoadBalancer
