@@ -30,7 +30,7 @@ spec:
     additionalArguments:
       - "--ping"
       - "--api.dashboard=true"
-      - "--providers.kubernetesingress.ingressendpoint.hostname=traefik.icecrown.local"
+      - "--providers.kubernetesingress.ingressendpoint.hostname=wintergrasp.icecrown.local"
     service:
       enabled: true
       type: LoadBalancer
