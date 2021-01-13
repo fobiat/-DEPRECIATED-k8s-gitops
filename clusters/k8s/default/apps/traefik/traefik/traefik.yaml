@@ -36,3 +36,9 @@ spec:
         - 10.10.20.80
       spec:
         externalTrafficPolicy: Local
+    ports:
+      web:
+        port: 8000
+        expose: true
+        exposedPort: 80
+        protocol: TCP
