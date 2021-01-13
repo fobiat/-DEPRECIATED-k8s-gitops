@@ -30,7 +30,7 @@ spec:
     additionalArguments:
       - "--ping"
       - "--api.dashboard=true"
-      - "--providers.kubernetesingress.ingressendpoint.hostname=i10.10.20.80"
+      - "--providers.kubernetesingress.ingressendpoint.hostname=10.10.20.80"
     service:
       enabled: true
       type: LoadBalancer
