@@ -30,7 +30,7 @@ spec:
     additionalArguments:
       - "--ping"
       - "--api.dashboard=true"
-      - "--providers.kubernetesingress.ingressendpoint.hostname=10.10.20.80"
+      - "--providers.kubernetesingress.ingressendpoint.hostname=traefik.icecrown.local"
     service:
       enabled: true
       type: LoadBalancer
@@ -43,5 +43,5 @@ spec:
       web:
         port: 8080
         expose: true
-        exposedPort: 80
+        exposedPort: 8080
         protocol: TCP
