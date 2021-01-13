@@ -8,6 +8,6 @@ spec:
   path: ./kustomize
   prune: true
   sourceRef:
-    kind: HelmRepository
+    kind: GitRepository
     name: traefik
   validation: client
