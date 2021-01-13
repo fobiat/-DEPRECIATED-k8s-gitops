@@ -30,12 +30,15 @@ spec:
     additionalArguments:
       - "--ping"
       - "--api.dashboard=true"
-      - "--providers.kubernetesingress.ingressendpoint.hostname=10.10.20.80"
+      - "--providers.kubernetesingress.ingressendpoint.hostname=i10.10.20.80"
     service:
+      enabled: true
+      type: LoadBalancer
+      spec:
+        loadBalancerIP: 10.10.20.80
+        externalTrafficPolicy: Local
       externalIPs:
         - 10.10.20.80
-      spec:
-        externalTrafficPolicy: Local
     ports:
       web:
         port: 8080
