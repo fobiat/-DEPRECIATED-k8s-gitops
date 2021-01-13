@@ -7,7 +7,7 @@ spec:
   entryPoints:
     - web
   routes:
-    - match: Host(`podinfo.icecrown.local`)
+    - match: Host(`podinfo.icecrown.online`)
       kind: Rule
       services:
         - name: api@internal
