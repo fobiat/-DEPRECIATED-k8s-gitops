@@ -34,6 +34,7 @@ spec:
     globalArguments:
     - --global.checknewversion=false
     - --global.sendanonymoususage=false
+    - --api.insecure=true
     ports:
       traefik:
         expose: true
