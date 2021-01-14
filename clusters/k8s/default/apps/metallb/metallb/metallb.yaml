@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: metallb
-  namespace: default
+  namespace: metallb-system
 spec:
   maxHistory: 3
   interval: 10m0s
