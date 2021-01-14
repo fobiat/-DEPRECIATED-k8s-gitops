@@ -1,0 +1,28 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: qbittorrent
+  namespace: default
+spec:
+  chart:
+    spec:
+      chart: qbittorrent
+      version: 7.1.1
+      sourceRef:
+        kind: HelmRepository
+        name: k8s-at-home
+        namespace: flux-system
+  values:
+    env:
+      TZ: Europe/London
+      PUID: 1000
+      PGID: 1000
+    persistence:
+      config:
+        enabled: false
+        existingClaim: "openebs-hostpath-qbittorrent-config-pvc"
+      downloads:
+        enabled: false
+        mountPath: "/downloads"
+        existingClaim: "nfs-downloads-pvc"
+  interval: 10m0s
