@@ -25,4 +25,4 @@ spec:
         enabled: false
         mountPath: "/downloads"
         existingClaim: "nfs-downloads-pvc"
-  interval: 10m0s
+  interval: 5m0s
