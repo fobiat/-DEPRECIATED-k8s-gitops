@@ -56,7 +56,6 @@ spec:
       enabled: true
       type: LoadBalancer
       spec:
-        loadBalancerIP: 10.10.20.80
         externalTrafficPolicy: Local
     dnsPolicy: ClusterFirst
     logs:
