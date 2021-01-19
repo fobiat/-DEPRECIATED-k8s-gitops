@@ -1,4 +1,4 @@
-[logo]: https://raw.githubusercontent.com/fobiat/k8s-gitops/main/clusters/include/img/logo.png "kubernetes"
+![logo]: https://raw.githubusercontent.com/fobiat/k8s-gitops/main/clusters/include/img/logo.png "kubernetes"
 A kubernetes cluster powered by GitOps
 Member of the k8s-at-home community  
 Github - https://github.com/k8s-at-home  
