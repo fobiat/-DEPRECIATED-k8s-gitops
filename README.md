@@ -30,4 +30,4 @@ Automated container deployment, scaling, and management
 * Flux2 - Open and extensible continuous delivery solution for Kubernetes. Powered by GitOps Toolkit.
 * Github - Code hosting platform for version control and collaboration.
 * Calico - an open source networking and network security solution for containers
-* MetalLB - load-balancer implementation for bare metal Kubernetes clusters,
+* MetalLB - load-balancer implementation for bare metal Kubernetes clusters
