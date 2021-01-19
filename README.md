@@ -1,10 +1,10 @@
 <img src="https://raw.githubusercontent.com/fobiat/k8s-gitops/main/clusters/include/img/logo.png" align="centre" width="750px" height="250x"/>
 # k8s-gitops
 A kubernetes cluster powered by GitOps.  
-Member of the k8s-at-home community. 
-Github https://github.com/k8s-at-home. 
-Repo's https://github.com/k8s-at-home/awesome-home-kubernetes. 
-Discord https://discord.gg/RGvKzVg. 
+Member of the k8s-at-home community  
+Github - https://github.com/k8s-at-home  
+Repo's - https://github.com/k8s-at-home/awesome-home-kubernetes  
+Discord - https://discord.gg/RGvKzVg
 
 
 ### Hardware
@@ -30,6 +30,3 @@ Automated container deployment, scaling, and management
 * Github - Code hosting platform for version control and collaboration.
 * Calico - an open source networking and network security solution for containers
 * MetalLB - load-balancer implementation for bare metal Kubernetes clusters,
-
-
-
