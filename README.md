@@ -1,6 +1,7 @@
-<img src="https://raw.githubusercontent.com/fobiat/k8s-gitops/main/clusters/include/img/logo.png" align="left" width="750px">
+<img src="https://raw.githubusercontent.com/fobiat/k8s-gitops/main/clusters/include/img/logo.png" align="centre" width="750px">
 
-A kubernetes cluster powered by GitOps
+
+A kubernetes cluster powered by GitOps <br />
 Member of the k8s-at-home community  
 Github - https://github.com/k8s-at-home  
 Repo's - https://github.com/k8s-at-home/awesome-home-kubernetes  
