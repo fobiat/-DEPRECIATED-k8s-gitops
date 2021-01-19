@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/fobiat/k8s-gitops/main/clusters/include/img/logo.png" align="left" width="750px" height="250px"/>
+<img src="https://raw.githubusercontent.com/fobiat/k8s-gitops/main/clusters/include/img/logo.png" align="left" width="750px"
 
 A kubernetes cluster powered by GitOps
 Member of the k8s-at-home community  
