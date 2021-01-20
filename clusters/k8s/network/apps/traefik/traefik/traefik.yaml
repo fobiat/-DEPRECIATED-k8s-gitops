@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: traefik
-  namespace: default
+  namespace: network
 spec:
   maxHistory: 3
   interval: 5m0s
