@@ -9,15 +9,15 @@ Discord - https://discord.gg/RGvKzVg
 
 
 ### Hardware
-This kubernetes cluster is run on a Dell Poweredge R720 with 12core/24thread and 128gb RAM. Proxmox for the hypervisor with 6 Ubuntu Server 20.04lts VMs and a 24TB ZFS pool.
+This kubernetes cluster is run on a Dell Poweredge R720 with 12core/24thread and 128gb RAM. Proxmox for the hypervisor with 5 Ubuntu Server 20.04lts VMs and a 24TB ZFS pool for backup and storage.
 
 | Node | Specification |
 | ------ | ------ |
-| node0.icecrown.online | 6 Cores, 16GB, 20.04LTS, control-plane,master |
-| node1.icecrown.online | 6 Cores, 16GB, 20.04LTS, worker |
-| node2.icecrown.online | 6 Cores, 16GB, 20.04LTS, worker |
-| node3.icecrown.online | 6 Cores, 16GB, 20.04LTS, worker |
-| node4.icecrown.online | 6 Cores, 16GB, 20.04LTS, worker |
+| master0.resolv.sh | 6 Cores, 16GB, 20.04LTS, control-plane,master |
+| master1.resolv.sh | 6 Cores, 16GB, 20.04LTS, control-plane,master |
+| master2.resolv.sh | 6 Cores, 16GB, 20.04LTS, control-plane,master |
+| node0.resolv.sh | 6 Cores, 16GB, 20.04LTS, worker |
+| node1.resolv.sh | 6 Cores, 16GB, 20.04LTS, worker |
 
 
 ### Packages
@@ -25,9 +25,10 @@ This kubernetes cluster is run on a Dell Poweredge R720 with 12core/24thread and
 This cluster uses a number of tools to work properly:
 
 * Kubernetes - Production-Grade Container Orchestration
-Automated container deployment, scaling, and management
-* Containerd - An industry-standard container runtime with an emphasis on simplicity, robustness and portability
+Automated container deployment, scaling, and management.
+* Kubespray - Uses Ansible to deploy a highly avaliable production ready cluster.
+* Containerd - An industry-standard container runtime with an emphasis on simplicity, robustness and portability.
 * Flux2 - Open and extensible continuous delivery solution for Kubernetes. Powered by GitOps Toolkit.
 * Github - Code hosting platform for version control and collaboration.
-* Calico - an open source networking and network security solution for containers
-* MetalLB - load-balancer implementation for bare metal Kubernetes clusters
+* Calico - an open source networking and network security solution for containers.
+* MetalLB - load-balancer implementation for bare metal Kubernetes clusters.
