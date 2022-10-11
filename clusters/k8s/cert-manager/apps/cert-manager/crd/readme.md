@@ -1,1 +1,0 @@
-k apply -f https://raw.githubusercontent.com/fobiat/k8s-gitops/main/clusters/k8s/cert-manager/apps/cert-manager/crd/CustomResourceDefinitions.yaml
