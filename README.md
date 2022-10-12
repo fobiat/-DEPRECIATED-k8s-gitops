@@ -11,13 +11,13 @@ Discord - https://discord.gg/RGvKzVg
 ### Hardware
 This kubernetes cluster is run on a Dell Poweredge R720 with 12core/24thread and 128gb RAM. Proxmox for the hypervisor with 5 Ubuntu Server 20.04lts VMs and a 24TB ZFS pool for backup and storage.
 
-| Node | Specification |
-| ------ | ------ |
+| Node              | Specification                                 |
+| ----------------- | --------------------------------------------- |
 | master0.resolv.sh | 6 Cores, 16GB, 20.04LTS, control-plane,master |
 | master1.resolv.sh | 6 Cores, 16GB, 20.04LTS, control-plane,master |
 | master2.resolv.sh | 6 Cores, 16GB, 20.04LTS, control-plane,master |
-| node0.resolv.sh | 6 Cores, 16GB, 20.04LTS, worker |
-| node1.resolv.sh | 6 Cores, 16GB, 20.04LTS, worker |
+| node0.resolv.sh   | 6 Cores, 16GB, 20.04LTS, worker               |
+| node1.resolv.sh   | 6 Cores, 16GB, 20.04LTS, worker               |
 
 
 ### Packages
