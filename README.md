@@ -1,5 +1,6 @@
 
-# Repo is now deprecated in favour for a single node k3s homelab setup due to rising electricity costs and a £350 monthly electric bill
+# Repo is now deprecated in favour for a single node k3s homelab setup due to rising electricity costs and a £350 monthly electric bill.
+## The new project can be found at fobiat/k3s-homelab
 
 <img src="https://raw.githubusercontent.com/fobiat/k8s-gitops/main/clusters/include/img/logo.png" align="centre" width="750px">
 
